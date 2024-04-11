@@ -1,0 +1,778 @@
+.logo {
+    background: #252525;
+    position: relative;
+    width: 150%;
+    height: 50%;
+    /* Adiciona posição relativa ao pai */
+}
+
+.thed img {
+    position: relative;
+    left: 700px;
+}
+
+body {
+    scroll-behavior: smooth;
+    /* Adiciona uma rolagem suave */
+}
+
+.logo {
+    background: #252525;
+    position: relative;
+    /* Adiciona posição relativa ao pai */
+}
+
+.botaa {
+    position: absolute;
+    bottom: 40px;
+    height: 150px;
+    width: 500px;
+    left: 1250px;
+    top: 30px;
+}
+
+#formulario {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 500px;
+    left: 1460px;
+    color: #f00;
+    top: 30px;
+}
+
+#botao-whatsapp {
+    width: 50%;
+    height: 60%;
+    cursor: pointer;
+    /* Altera o cursor ao passar por cima do vídeo */
+}
+
+
+/* Estilos adicionais para fazer o vídeo parecer um botão */
+
+#botao-whatsapp {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+#botao-whatsapp::-webkit-media-controls-start-playback-button {
+    display: none;
+    /* Oculta os controles de reprodução do navegador */
+}
+
+#botao-whatsapp:hover {
+    opacity: 0.8;
+    /* Reduz a opacidade ao passar o mouse sobre o vídeo */
+}
+
+.menu {
+    bottom: 900px;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    top: 20px;
+}
+
+.menu a:hover {
+    color: #f00;
+    /* Mudar a cor ao passar o mouse */
+}
+
+.eeee {
+    display: none;
+}
+
+.menuu {
+    display: none;
+    bottom: 900px;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.botaomenu {
+    display: none;
+    bottom: 900px;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.imagens {
+    position: relative;
+    width: 110%;
+    height: 100%;
+    bottom: 0px;
+}
+
+.imagemobile img {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+}
+
+#contato {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 500px;
+    left: 100;
+    color: #f00;
+    top: 50px;
+    padding: 10px;
+}
+
+#servico {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 500px;
+    left: 100;
+    color: #f00;
+    top: 95px;
+}
+
+.mostrarElemento {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.mostrarElemento:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.mostrarElemento:active {
+    color: #000
+}
+
+.mostrarElemento:active:after {
+    background: transparent;
+}
+
+.mostrarElemento:hover:before {
+    opacity: 1;
+}
+
+.mostrarElemento:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#caqui {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 500px;
+    left: 100;
+    color: #f00;
+    top: 0;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 auto;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #009688;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    /* Define o contêiner como um flex container */
+    flex-wrap: wrap;
+    /* Permite que os elementos se ajustem automaticamente à largura do contêiner */
+    justify-content: space-between;
+    /* Distribui os elementos com espaço igual ao redor deles */
+}
+
+.card {
+    border: 1px solid #0f0606;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #0a0505;
+    /* Altera a cor de fundo quando o mouse está sobre o "card" */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.info {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.price {
+    color: #009688;
+    font-size: 16px;
+}
+
+.titulo {
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 30px;
+    /* Adiciona espaço na parte inferior para separar dos "cards" */
+}
+
+.titulo h1 {
+    font-size: 36px;
+    /* Define o tamanho da fonte */
+    color: #333;
+    /* Define a cor do texto */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+    margin-bottom: 10px;
+    /* Adiciona espaço na parte inferior */
+}
+
+.titulo p {
+    font-size: 18px;
+    /* Define o tamanho da fonte */
+    color: #666;
+    /* Define a cor do texto */
+}
+
+.card-titulo {
+    background-color: #f7f7f7;
+    /* Cor de fundo do cartão */
+    border-radius: 10px;
+    /* Borda arredondada */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+.card-titulo h1 {
+    font-size: 36px;
+    /* Tamanho da fonte do título */
+    color: #333;
+    /* Cor do texto do título */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+.card-titulo p {
+    font-size: 18px;
+    /* Tamanho da fonte do texto */
+    color: #666;
+    /* Cor do texto */
+}
+
+.card-titulo {
+    background-color: #f7f7f7;
+    /* Cor de fundo do cartão */
+    border-radius: 10px;
+    /* Borda arredondada */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+.titulo-content {
+    background-image: linear-gradient(to bottom, #140707, #0000ff);
+    /* Gradiente vertical */
+    height: 300px;
+    /* Altura do elemento */
+    /* Cor de fundo da área destacada */
+    border-radius: 10px;
+    /* Borda arredondada */
+    padding: 20px;
+    /* Espaçamento interno */
+}
+
+.card-titulo h1 {
+    font-size: 36px;
+    /* Tamanho da fonte do título */
+    color: #fff;
+    /* Cor do texto do título */
+    margin-bottom: 10px;
+    /* Espaçamento inferior */
+}
+
+.card-titulo p {
+    font-size: 18px;
+    /* Tamanho da fonte do texto */
+    color: #fff;
+    /* Cor do texto */
+}
+
+.card-titulo h2 {
+    font-size: 30px;
+    /* Tamanho da fonte do texto */
+    color: #fff;
+    /* Cor do texto */
+}
+
+.imagem-grande {
+    width: 300px;
+    /* Define a largura da imagem grande */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.card {
+    width: 300px;
+    /* Define a largura do cartão */
+    height: 400px;
+    /* Define a altura do cartão */
+    border: 1px solid #ccc;
+    /* Adiciona uma borda para visualização */
+    border-radius: 8px;
+    /* Adiciona bordas arredondadas */
+    overflow: hidden;
+    /* Garante que as imagens não ultrapassem os limites do cartão */
+}
+
+.card img {
+    width: 100%;
+    /* Define a largura da imagem como 100% do cartão */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    padding: 20px;
+    flex: 1;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-img-link {
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.footer-img-link img {
+    width: 40px;
+    /* Define a largura da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.footer-img-link:hover {
+    opacity: 1;
+}
+
+.eee a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu-hamburguer {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-navegacao {
+    display: none;
+}
+
+.linha {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+}
+
+@media screen and (max-width:1020px) {
+    .menu {
+        display: none;
+    }
+    .logo {
+        background: #252525;
+        position: relative;
+        width: 100%;
+        height: 15%;
+        /* Adiciona posição relativa ao pai */
+    }
+    .thed img {
+        position: relative;
+        left: -30px;
+        width: 60%;
+        padding: 10px;
+        width: 200px;
+    }
+    .botaa {
+        top: 0px;
+        position: absolute;
+        bottom: 10px;
+        width: 160%;
+        left: 160px;
+        height: 20%;
+    }
+    .botaa img {
+        top: 20px;
+        position: absolute;
+        bottom: 0px;
+        width: 20%;
+        left: 0px;
+    }
+    .imagens {
+        display: none;
+    }
+    .imagemobile img {
+        display: block;
+        position: relative;
+        height: 230px;
+        top: 0px;
+        width: 100%;
+        bottom: 0px;
+    }
+    .menu-hamburguer {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    .card-titulo {
+        position: relative;
+        width: 100%;
+        height: 30%;
+    }
+    .titulo-content {
+        position: relative;
+        height: 90%;
+    }
+    .menuu {
+        display: block;
+        right: 0px;
+        ;
+    }
+    .icon {
+        display: block;
+    }
+}
+
+
+/*datas code    /////s///////////////////////////////////*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.botao {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    display: none;
+    /* Inicialmente oculto em telas maiores */
+    color: white;
+    /* Define a cor do ícone como preto */
+    background-color: #252525;
+    /* Define o fundo do ícone como branco */
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    /* Posiciona o ícone à direita */
+    z-index: 10000;
+    /* Aumenta o z-index para garantir que o ícone esteja acima de outros elementos */
+}
+
+.menu-principal {
+    background-color: #333;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 9999;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-principal ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-principal ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9000;
+}
+
+.menu-open .menu-principal {
+    display: block;
+}
+
+.menu-open .overlay {
+    display: block;
+}
+
+@media screen and (max-width: 1020px) {
+    /* Estilos para telas menores que 1020px */
+    .menu-principal {
+        width: 200px;
+        right: 0;
+    }
+    .menu-principal ul li {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Estilos para dispositivos móveis com largura máxima de 767px */
+    .menu-icon {
+        display: block;
+        /* Exibe o botão do menu apenas em dispositivos móveis */
+    }
+}
+
+.sobree a {
+    color: #0a0505;
+    background-color: aquamarine;
+    width: 190px;
+    top: 30px;
+    position: relative;
+    font-weight: 700;
+    /* Negrito */
+}
+
+.horarioss a {
+    position: relative;
+    bottom: 14px;
+    left: 200px;
+    width: 250px;
+    font-weight: 700;
+    /* Negrito */
+}
+
+.botao {
+    position: absolute;
+    width: 250px;
+    height: 44px;
+    left: 200px;
+    font-weight: 400;
+    /* Negrito */
+}
